@@ -1,0 +1,7 @@
+.root {
+-fx-background-image:url('images/back.jpg');
+-fx-background-size:cover;
+}
+.log .scroll-pane .content{
+    -fx-background-color: transparent;
+}

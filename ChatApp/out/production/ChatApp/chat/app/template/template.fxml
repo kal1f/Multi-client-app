@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler">
+    <children>
+        <Label prefHeight="40.0" prefWidth="80.0" text="Ваш ник:" textFill="#3c39a3" underline="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nickname" prefHeight="25.0" prefWidth="174.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="8.0" />
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <content>
+                <TextArea fx:id="dialogWn" editable="false" prefHeight="408.0" prefWidth="298.0" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="send" mnemonicParsing="false" onMouseClicked="#onToSendClick" prefHeight="25.0" prefWidth="100.0"
+                text="Отправить" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0"/>
+
+        <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#onExitClicked" prefHeight="25.0" prefWidth="100.0"
+                text="Выход" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="40.0"/>
+    </children>
+</AnchorPane>
